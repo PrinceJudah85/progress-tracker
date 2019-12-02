@@ -4,7 +4,7 @@
 An app that allows you to create and store workout logs
 
 ### Preface
-So I'd describe my relationship with the gym to be fairly active.  I go more times than I don't in a given week.  However I never have anyway of recording my workout routines and using them as reference points for setting goals on my next workout. This app solves that problem.
+So I'd describe my relationship with the gym to be fairly active.  I go more times than not in a given week.  However I never have anyway of recording my workout routines and using them as reference points for setting goals on my next workout. This app solves that problem.
 
 ### Project Description
 
@@ -61,7 +61,7 @@ Progress Tracker is essentially a digital workout journal where you're able to s
 
 ## Estimated Time Table
 | Name     | H |Estimated Time| Actual Time | 
-| -------- |---|--------------|--------------
-| Back End | H |    15 HRS    |     ?
-| Front End| H |    30 HRS    |     ?
-| CSS      | H |    2 MIN     |     ?
+| -------- |---|--------------|-------------|
+| Back End | H |    15 HRS    |     ?       |
+| Front End| H |    30 HRS    |     ?       |
+| CSS      | H |    2 MIN     |     ?       |
