@@ -8,7 +8,7 @@ So I'd describe my relationship with the gym to be fairly active.  I go more tim
 
 ### Project Description
 
-Progress Tracker is essentially a digital workout journal where you're able to store workout logs in a database and refer to them whenever you'd like.  It can show you the progress you've made over the last couple weeks, months or years. A stopwatch is also included. 
+Progress Tracker is essentially a digital workout journal where you're able to store workout logs in a database and refer to them whenever you'd like.  It can show you the progress you've made over the last couple weeks, months or years. A stopwatch feature has also been included. 
 
 ## Feature List:
 
