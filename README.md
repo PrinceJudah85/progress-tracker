@@ -36,7 +36,7 @@ Progress Tracker is essentially a digital workout journal where you're able to s
 
 ## ERD
 
-![ERD Diagram](https://i.imgur.com/TDSxxrK.png)
+![ERD Diagram](https://i.imgur.com/jQjt5JH.png)
 
 ## Wireframes
 
