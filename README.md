@@ -59,13 +59,10 @@ Progress Tracker is essentially a digital workout journal where you're able to s
 * < /main >
 
 
+## Estimated Time Table
+| Name     | H |Estimated Time| Actual Time | 
+| -------- |---|--------------|--------------
+| Back End | H |    15 HRS    |     ?
+| Front End| H |    30 HRS    |     ?
+| CSS      | H |    2 MIN     |     ?
 
-<!-- Tables -->
-| Name     | Email          |
-| -------- | -------------- |
-| John Doe | john@gmail.com |
-| Jane Doe | jane@gmail.com |
-<!-- Task List -->
-* [x] Task 1
-* [x] Task 2
-* [] Task 3
