@@ -1,5 +1,5 @@
 # Progress Tracker
-
+# Make sure to have a link to stopwatch at every corner of the app, since it's literally the only other feature on the app, it should at the very least be accessible anywhere you go. NOTE TO SELF.
 ### Project Overview
 An app that allows you to create and store workout logs
 
@@ -36,7 +36,7 @@ Progress Tracker is essentially a digital workout journal where you're able to s
 
 ## ERD
 
-![ERD Diagram](https://i.imgur.com/jQjt5JH.png)
+![ERD Diagram](https://i.imgur.com/CcfcH2M.png)
 
 ## Wireframes
 
