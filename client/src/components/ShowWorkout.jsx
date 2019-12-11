@@ -6,8 +6,8 @@ export default function ShowWorkout(props) {
     <div className='parent-div'>
       {props.workout &&
         <div className='show-page'>
-          <h2>{props.workout.title}</h2>
-          <p ><span >{props.workout.date}</span></p>
+          <h2><span className="form-fields">{props.workout.title}</span></h2>
+          <p ><span className="form-fields">{props.workout.date}</span></p>
           <p><span className="form-fields">{props.workout.exercise}</span></p>
           <p><span className="form-fields">{props.workout.set_count}</span></p>
           <p><span className="form-fields">{props.workout.rep_count}</span></p>

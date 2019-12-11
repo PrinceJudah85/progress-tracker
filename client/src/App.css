@@ -23,10 +23,14 @@ header a{
 }
 
 .header-title {
+  display:flex;
   align-self:flex-start;
-  margin-right:0;
+  margin-right:-10%;
 }
 
+.header-title button{
+  width:100%;
+}
 .main-page {
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -63,6 +67,8 @@ header a{
   background-repeat:no-repeat;
   background-size:cover;
   margin-top:-2.5em;
+  width:100%;
+  height:60vh;
 }
 .workout-form-container form {
   display:flex;
@@ -133,7 +139,7 @@ header a{
     background-image:url('http://getwallpapers.com/wallpaper/full/8/4/f/200336.jpg');
     background-size:cover;
     background-repeat:no-repeat;
-    height:100vh;
+    height:140vh;
   }
 
   .workout-card {
@@ -156,26 +162,27 @@ header a{
   margin:0px auto;
   text-align:center;
   border: 4px solid black;
-  margin-top:2em;
+  margin-top:-2em;
   padding-top:1.5em;
   padding-bottom:1.3em;
   }
 
-  .form-fields{
-    background-color:#fc03fc;
-    opacity:.9;
-    font-weight:bold;
+  .form-fields {
+  background-color:#fc03fc;
+  opacity:.9;
+  font-weight:bold;
+  font-size: 24px;
   }
 
-  .parent-div {
-  /* background-image: url('https://images-na.ssl-images-amazon.com/images/I/81-r3lE3o-L._SL1285_.jpg');
+  .show-page {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/I/81-r3lE3o-L._SL1285_.jpg');
   background-size:cover;
-  background-repeat:repeat; */
+  background-repeat:no-repeat;
+  width: 100%;
+  height: 100vh;
   
-  height:85vh;
-  margin-top:-2em;
-  }
-
+}
+  
   .show-page textarea{
     display:block;
   }
@@ -190,7 +197,7 @@ header a{
     border-radius: .8em;
     border: 1px solid black;
     transition: background-color 250ms linear;
-    width:35%;
+    width:23%;
     text-align:center;
   }
 
@@ -206,6 +213,13 @@ header a{
     border: 1px solid black;
     margin-left:39%;
     margin-right:39%;
+    background-color:#b5b0b5;
+  }
+
+  .edit-screen {
+    background-image:url('https://i.pinimg.com/originals/8f/d7/c3/8fd7c324977916482179e0cbb7c23fe7.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
   }
 
   .edit-window p{
@@ -236,6 +250,7 @@ header a{
     display:grid;
     grid-template-columns: auto;
     grid-template-rows:auto;
-    width:60%;
+    width:100%;
     margin:0 auto;
+    height:100vh;
   }
