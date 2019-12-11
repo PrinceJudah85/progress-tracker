@@ -24,7 +24,8 @@ workouts = Workout.create ([
     exercise:'push-ups',
     set_count: 3,
     rep_count: 10,
-    content: "test for bodyweight",    
+    content: "test for bodyweight",  
+    image_url:"https://library.kissclipart.com/20180903/iw/kissclipart-interactive-whiteboard-clipart-paper-notebook-pens-6bee7fa7d87b3919.jpg", 
     user_id: 1
   },
   {
@@ -36,6 +37,7 @@ workouts = Workout.create ([
     rep_count: 10,
     weight_count: 150,
     content: "Test for weight-training",
+    image_url:"https://library.kissclipart.com/20180903/iw/kissclipart-interactive-whiteboard-clipart-paper-notebook-pens-6bee7fa7d87b3919.jpg",
     user_id: 2
   },
   {
@@ -45,6 +47,7 @@ workouts = Workout.create ([
     exercise: "running",
     duration: 30,
     content: "Test for Cardio",
+    image_url:"https://library.kissclipart.com/20180903/iw/kissclipart-interactive-whiteboard-clipart-paper-notebook-pens-6bee7fa7d87b3919.jpg",
     user_id: 1
   },
 ])

@@ -1,5 +1,7 @@
 class WorkoutsController < ApplicationController
   before_action :set_workout, only: [:show, :update, :destroy]
+  before_action :authorize_request, except: [:index, :show]
+
 
   # GET /workouts
   def index
@@ -16,9 +18,9 @@ class WorkoutsController < ApplicationController
   # POST /workouts
   def create
     @workout = Workout.new(workout_params)
-
-    if @workout.save
-      render json: @workout, status: :created, location: @workout
+    @workout.user = @current_user
+    if @workout.save!
+      render json: @workout, status: :created
     else
       render json: @workout.errors, status: :unprocessable_entity
     end
@@ -46,6 +48,6 @@ class WorkoutsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def workout_params
-      params.require(:workout).permit(:title, :content, :date, :set_count, :rep_count, :duration, :weight_count, :user_id)
+      params.require(:workout).permit(:title, :exercise, :image_url, :content, :date, :set_count, :rep_count, :duration, :weight_count, :user_id)
     end
 end

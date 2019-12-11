@@ -1,22 +1,241 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+header {
+  background: rgb(32,31,31);
+  background: linear-gradient(90deg, rgba(32,31,31,1) 0%, rgba(146,145,145,1) 50%, rgba(198,198,198,1) 75%, rgba(255,255,255,1) 100%);
+  margin:0;
+  height: 130px;
+  display:flex;
+  flex-direction:row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #09d3ac;
+header h1{
+  margin-top: 0;
+  font-family:'Bebas Neue', 'Alatsi';
+  font-size: 5em;
+  letter-spacing:3px;
+  margin-top:.6em; 
+  color: #fc03fc;
 }
+
+header a{
+  text-decoration:none;
+}
+
+.header-title {
+  align-self:flex-start;
+  margin-right:0;
+}
+
+.main-page {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: auto;
+  text-align:center;
+}
+
+.main-page a{
+  text-decoration: none;
+  color: #fc03fc;
+  font-family: 'Alatsi', monospace;
+  font-size: 2.8em;
+  cursor: pointer;
+}
+
+.left-side {
+  background-image: url('https://i2.wp.com/justhomegym.com/wp-content/uploads/2016/06/Free-Weights-Equipment.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  object-fit:contain;
+  height:83vh;
+}
+
+.right-side {
+  background-image: url('http://www.girlaboutgym.com/wp-content/uploads/2016/02/hull-gym-weights.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  object-fit:contain;
+  height:83vh;
+}
+
+.workout-form-container {
+  background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin-top:-2.5em;
+}
+.workout-form-container form {
+  display:flex;
+  flex-direction:column;
+  width:35%;
+  margin:0px auto;
+  }
+
+  .workout-form-container h2 {
+  font-family:'Alatsi';
+  font-size:3em;
+  text-align:center;
+  color:white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+
+  input[type=text] {
+    font-size:1em;
+    background-color: #CEC6C1;
+    border: 1px solid black;
+    border-radius: .4em;
+    margin-bottom: 15px;
+    line-height: 30px;
+    opacity: .9;
+  }
+  input[type=date] {
+    font-size:1em;
+    background-color: #CEC6C1;
+    border: 1px solid black;
+    border-radius: .4em;
+    margin-bottom: 15px;
+    line-height: 30px;
+    opacity: .9;
+  }
+
+  textarea {
+    border: 1px solid black;
+    font-size:1em;
+    margin-bottom: 1em;
+    height: 20vh;
+    border-radius: 5px;
+    background-color: #CEC6C1;
+    opacity:.9;
+  }
+
+  #form-button {
+    font-weight: bold;
+    font-size: .9em;
+    padding: .6em;
+    background-color: white;
+    color: black;
+    margin-top: 1em;
+    border-radius: .8em;
+    border: 1px solid black;
+    transition: background-color 250ms linear;    
+  }
+
+  #form-button:hover {
+    transition-timing-function: ease-in;
+    background-color:black;
+    color:white;
+  }
+
+  .workouts-container {
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center;
+    background-image:url('http://getwallpapers.com/wallpaper/full/8/4/f/200336.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+  }
+
+  .workout-card {
+    margin-bottom:15%;
+  }
+
+  .workout-card img {
+    height:300px;
+  }
+
+  .workout-card h3{
+    text-align:center;
+    margin-top:-40%;
+  }
+
+  .show-page {
+  display:flex;
+  flex-direction:column;
+  width:30%;
+  margin:0px auto;
+  text-align:center;
+  border: 4px solid black;
+  margin-top:2em;
+  padding-top:1.5em;
+  padding-bottom:1.3em;
+  }
+
+  .form-fields{
+    background-color:#fc03fc;
+    opacity:.9;
+    font-weight:bold;
+  }
+
+  .parent-div {
+  /* background-image: url('https://images-na.ssl-images-amazon.com/images/I/81-r3lE3o-L._SL1285_.jpg');
+  background-size:cover;
+  background-repeat:repeat; */
+  
+  height:85vh;
+  margin-top:-2em;
+  }
+
+  .show-page textarea{
+    display:block;
+  }
+
+  .show-button {
+    font-weight: bold;
+    font-size: .9em;
+    padding: .6em;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    border-radius: .8em;
+    border: 1px solid black;
+    transition: background-color 250ms linear;
+    width:35%;
+    text-align:center;
+  }
+
+  .show-button:hover{
+    transition-timing-function: ease-in;
+    background-color:black;
+    color:white;
+  }
+
+  .edit-window {
+    text-align:center;
+    padding:.2em;
+    border: 1px solid black;
+    margin-left:39%;
+    margin-right:39%;
+  }
+
+  .edit-window p{
+    padding:-.7em;
+  }
+
+  .edit-button{
+    font-weight: bold;
+    font-size: .9em;
+    padding: .6em;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    border-radius: .8em;
+    border: 1px solid black;
+    transition: background-color 250ms linear;
+    width:50%;
+    text-align:center;
+  }
+
+  .edit-button:hover {
+    transition-timing-function: ease-in;
+    background-color:black;
+    color:white;
+  }
+
+  .workout-form-container {
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    width:60%;
+    margin:0 auto;
+  }

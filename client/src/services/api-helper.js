@@ -35,14 +35,31 @@ export const verifyUser = async () => {
   return false
 }
 
-export const createWorkout = async (data) => {
-  const resp = await api.post('/workouts', { workout: data })
-  return resp.data
+export const getWorkoutsByUserId = async user_id => {
+  try {
+    const response = await api.get(`/users/${user_id}/workouts`)
+    return response.data
+  } catch (error) {
+    return { error: "Couldn't retrieve workouts" }
+  }
 }
 
-// Want to retrieve All workouts by a specific user_id **** 
 export const readAllWorkouts = async () => {
-  const resp = await api.get('/workouts/')
+  const resp = await api.get('/workouts')
+  return resp.data
+}
+// POST MVP AXIOS CALL BELOW
+// export const getImagesByWorkoutId = async workout_id => {
+//   try {
+//     const response = await api.get(`/users/:user_id/workouts/${workout_id}/images`)
+//     return response.data.images
+//   } catch (error) {
+//     return { error: "Couldn't retrieve images" }
+//   }
+// }
+
+export const createWorkout = async (userId, data) => {
+  const resp = await api.post(`/users/${userId}/workouts`, { workout: data })
   return resp.data
 }
 
@@ -52,11 +69,11 @@ export const singleWorkout = async (id) => {
 }
 
 export const updateWorkout = async (id, data) => {
-  const resp = await api.put(`/workouts/${id}`, { workout: data })
+  const resp = await api.put(`/users/user_id/workouts/${id}`, { workout: data })
   return resp.data
 }
 
 export const destroyWorkout = async (id) => {
-  const resp = await api.delete(`/workouts/${id}`)
+  const resp = await api.delete(`/users/user_id/workouts/${id}`)
   return resp.data
 }

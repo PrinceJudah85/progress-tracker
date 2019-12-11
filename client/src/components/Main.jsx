@@ -13,12 +13,15 @@ class Main extends React.Component {
   render() {
     return (
       <div className='main-page' >
-        <Header />
-        <Link to='/workout/new'><h2>New Workout</h2></Link>
-        {/* <Link to='/stop-watch'>Stop Watch</Link> */}
-        <Link to='workout/all' > <h2>Workout Log</h2></Link>
+        <div className='left-side'>
+          <Link to='/workouts/new'><h2>New Workout</h2></Link>
+        </div>
+        <div className='right-side'>
+          {/* <Link to='/stop-watch'>Stop Watch</Link> */}
+          <Link to='workouts/all' > <h2>Workout Log</h2></Link>
+        </div>
       </div >
     )
   }
 }
-  export default Main;
+export default Main;
