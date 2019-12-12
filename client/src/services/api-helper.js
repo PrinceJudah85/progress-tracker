@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:3000'
+// const baseUrl = 'http://localhost:3000'
+const baseUrl = "https://gentle-hamlet-54671.herokuapp.com"
 
 const api = axios.create({
   baseURL: baseUrl
